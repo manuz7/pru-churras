@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
       Truco
     </ion-title>
@@ -9,22 +9,82 @@
 <ion-content [fullscreen]="true">
   <!--Valendo-->
 
-<h1>Valendo:</h1>
+
+
+  <div class="valendo">
+    <div class="coluna1">
+<h1 class="valendo">Valendo:</h1>
 
 <!--Botões-->
-<ion-button class="B1">1</ion-button>
-<ion-button class="3">3</ion-button>
-<ion-button class="6">6</ion-button>
-<ion-button class="9">9</ion-button>
-<ion-button class="12">12</ion-button>
+<ion-button class="V1">1</ion-button>
+<ion-button class="V1">3</ion-button>
+<ion-button class="V1">6</ion-button>
+<ion-button class="V1">9</ion-button>
+<ion-button class="V1">12</ion-button>
 
 <!--Times-->
+</div>
+</div>
+
+
+
+<!--Card1-->
+<div class="cards">
+  <div class="coluna2">
 
 <ion-card color="tertiary">
   <ion-card-header>
     <ion-card-title>TIME 1</ion-card-title>
-    <ion-button class="card"> +</ion-button>
+    <ion-button class="card1"> +</ion-button>
+    <h1>0</h1>
+    <ion-button class="card1"> -</ion-button>
   </ion-card-header>
-</ion-card>
+  </ion-card>
+
+
+
+
+<!--Card2-->
+  <ion-card color="warning">
+  <ion-card-header>
+    <ion-card-title>TIME 2</ion-card-title>
+    <ion-button class="card2"> +</ion-button>
+    <h1>0</h1>
+    <ion-button class="card2"> -</ion-button>
+     </ion-card-header>
+  </ion-card>
+</div>
+</div>
+
+
+<!--Partidas-->
+
+<div class="cont">
+<h1>Partidas:</h1>
+<div class="p1">
+
+  <div class="times">
+   <ion-item>
+     <h1>TIME 1</h1>
+   </ion-item>
+   <ion-item>
+    <h1>TIME 2</h1>
+  </ion-item>
+  </div>
+
+
+<!--numeros-->
+  <div>
+    <ion-item>
+      <h1>0</h1>
+    </ion-item>
+    <ion-item>
+      <h1>0</h1>
+    </ion-item>
+  </div>
+</div>
+</div>
+
+
 
 </ion-content>
