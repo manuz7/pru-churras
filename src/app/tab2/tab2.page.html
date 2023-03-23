@@ -13,21 +13,23 @@
 
   <div class="valendo">
     <div class="coluna1">
-<h1 class="valendo">Valendo:</h1>
+<h1 class="valendo">Valendo:{{numero}}</h1>
 
 <!--Botões-->
-<ion-button class="V1">1</ion-button>
-<ion-button class="V1">3</ion-button>
-<ion-button class="V1">6</ion-button>
-<ion-button class="V1">9</ion-button>
-<ion-button class="V1">12</ion-button>
+<ion-button (click)="botoes(1)" class="V1">1</ion-button>
+<ion-button (click)="botoes(3)" class="V1">3</ion-button>
+<ion-button (click)="botoes(6)" class="V1">6</ion-button>
+<ion-button (click)="botoes(9)" class="V1">9</ion-button>
+<ion-button (click)="botoes(12)" class="V1">12</ion-button>
 
 <!--Times-->
 </div>
 </div>
 
 
-
+<br>
+<br>
+<br>
 <!--Card1-->
 <div class="cards">
   <div class="coluna2">
@@ -35,22 +37,25 @@
 <ion-card color="tertiary">
   <ion-card-header>
     <ion-card-title>TIME 1</ion-card-title>
-    <ion-button class="card1"> +</ion-button>
-    <h1>0</h1>
-    <ion-button class="card1"> -</ion-button>
+    <ion-button (click)="soma1()" class="card1"> +</ion-button>
+    <h1>{{time1}}</h1>
+    <ion-button (click)="tirar1()"class="card1"> -</ion-button>
   </ion-card-header>
   </ion-card>
-
+</div>
+</div>
 
 
 
 <!--Card2-->
+<div class="cards">
+  <div class="coluna2">
   <ion-card color="warning">
   <ion-card-header>
     <ion-card-title>TIME 2</ion-card-title>
-    <ion-button class="card2"> +</ion-button>
-    <h1>0</h1>
-    <ion-button class="card2"> -</ion-button>
+    <ion-button (click)="soma2()" class="card2"> +</ion-button>
+    <h1>{{time2}}</h1>
+    <ion-button (click)="tirar2()" class="card2"> -</ion-button>
      </ion-card-header>
   </ion-card>
 </div>
@@ -76,15 +81,20 @@
 <!--numeros-->
   <div>
     <ion-item>
-      <h1>0</h1>
+      <h1>{{p1}}</h1>
     </ion-item>
     <ion-item>
-      <h1>0</h1>
+      <h1>{{p2}}</h1>
     </ion-item>
   </div>
 </div>
 </div>
 
 
-
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar (click)= "voltar()" color="tertiary" class="btn">
+    <ion-title class="ion-text-center"> Limpar!</ion-title>
+  </ion-toolbar>
+</ion-footer>

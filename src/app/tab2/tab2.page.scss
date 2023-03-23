@@ -3,9 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10%;
-  width: 100%;
-  flex-flow: column;
+
   }
 
 
@@ -55,24 +53,23 @@
   --ripple-color: rgb(255, 238, 162);
   --padding-top: 10px;
   --padding-bottom: 10px;
+
 }
 
 .valendo1{
-  display: flex;
   align-items: center;
-  justify-content: center;
-  height: 10%;
-  width: 100%;
-  flex-flow: column;
+
 }
 
 .cards{
   display: flex;
   align-items: center;
-  height: 50%;
-  width: 100%;
   flex-flow: column;
-
+  display: flex;
+  width: 50%;
+  align-items: center;
+  float: left;
+  justify-content: center;
 
   .coluna2{
 
@@ -93,8 +90,7 @@
 .cont{
   display: flex;
   align-items: center;
-  height: 50%;
-  width: 100%;
+    width: 100%;
   flex-flow: column;
 
 
